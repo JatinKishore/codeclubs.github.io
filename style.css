@@ -1,0 +1,226 @@
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.containers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5px;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.first_place {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  order: 1;
+  align-self: flex-start;
+}
+.people{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-self: center;
+  order: 1;
+}
+.second_place {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  order: -1;
+}
+
+.third_place {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  order: 1;
+}
+
+.fourth_place {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  order: -2;
+  align-self: flex-end;
+}
+
+.fifth_place {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  order: 2;
+  align-self: flex-end;
+}
+
+@media (max-width: 767px) {
+ 
+  .top{
+    order: -1;
+  }
+  .foots{
+    order: 0;
+  }
+  .first_place {
+    display: flex;
+    order: 1;
+    
+  }
+
+  .second_place {
+    order: 2;
+  }
+
+  .third_place {
+    order: 3;
+  }
+
+  .fourth_place {
+    order: 4;
+  }
+
+  .fifth_place {
+    order: 5;
+  }
+  .Invisible{
+    display: none;
+  }
+}
+.container_toggle{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 60px;
+  margin: 0 10px;
+  
+}
+
+.slider{
+  position: absolute;
+  cursor:pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:url(Images/wizardBBanner.gif); 
+  background-size:  50px 90px;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch input{
+  display: none;
+}
+
+.slider:before{
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  left: 5px; 
+  bottom: 5px;  
+  transition: 0.4s;
+  border-radius: 50px;
+  background-image: url(Images/king.png); 
+  background-size: 50px 70px;
+  transform: scaleX(-1); 
+}
+
+input:checked + .slider{   
+  background-image: url(Images/thumsup.gif);
+  background-size: 50px 60px;
+  transform: scaleX(-1); 
+}
+
+input:checked + .slider::before{  
+  transform: translate(50px);
+  background-image: url(Images/wizard.jpeg);
+  transform: scaleX(1);
+  background-size: 50px 70px;  
+}
+/* Define a transition duration during page visits */
+html.to-gradient .page+.page {
+  z-index: 3;
+}
+
+html.to-gradient .transition-reveal {}
+
+html.to-gradient .page+.page {
+  mask-image: linear-gradient(to left, transparent 33.33%, white 66.66%);
+  -webkit-mask-image: linear-gradient(to left, transparent 33.33%, white 66.66%);
+  mask-size: 300% 100%;
+  -webkit-mask-size: 300% 100%;
+  mask-position: right;
+  -webkit-mask-position: right;
+}
+html.is-leaving .transition-reveal{
+
+}
+html.is-changing .transition-fade {
+  transition: 600ms;
+  opacity: 1;
+  transform: translateX(100);
+  transform-origin: left;
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-fade {
+  opacity: 2;
+  transform: translate(-100%);
+  transform-origin: right;
+}
+
+html.is-leaving .transition-fade{
+  opacity: 0;
+  transform: translateX(100);
+}
+
+/*  */
+html.is-changing .transition-fade-left {
+  transition: 600ms;
+  opacity: 1;
+  transform: translateX(100);
+  transform-origin: left;
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-fade-left {
+  opacity: 2;
+  transform: translate(100%);
+  transform-origin: right;
+}
+
+html.is-leaving .transition-fade-left{
+  opacity: 0;
+  transform: translateX(200);
+}
+
+
+

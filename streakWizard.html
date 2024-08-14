@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>streakWizards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="./Images/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      
+      table{
+        text-align: center;
+      }
+        .maincontainer{
+            position: relative;
+            width: 140px;
+            height: 210px;
+            
+        }
+
+        .thecard{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+           
+        }
+        .thecard:hover{
+            transform: rotateY(180deg);
+
+        }
+        .thefront{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #ffc728;
+            color:#333 ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-style: outset;
+            border-width: 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            border: #333;
+            
+            text-align: center;
+        }
+
+        .theback{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #fafafa;
+            color: #333;
+            transform: rotateY(180deg);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 2px solid #000;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+           
+        }
+        
+        tr{
+          height: 30px;         
+        }
+
+        tr:first-of-type{
+          background-image: linear-gradient(to right, lightblue , blue);
+        }
+        th,td{
+          text-align: center;
+          vertical-align: middle;
+        }
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+        th{
+          font-size: 18px;
+        }
+        td{
+          font-size: 18px;
+          font-weight: 900;
+        }
+       
+        
+    </style>
+</head>
+
+<body> 
+ 
+
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./Images/logo.png" alt="Code Club logo" height="80"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Fightclub.html">Fight Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./WeeklyWinners.html">Weekly Winners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./hallOfFame.html">Hall of Fame</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Youtube.html">You Tube</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Whatsapp.html">Whats app</a>
+            </li>            
+          </ul>
+        </div>
+        
+      </div>
+      
+    </nav>
+    
+  </section>
+  <main id="swup" class="transition-reveal">
+    <div class="">
+      <div class="container_toggle">
+        <a href="/WeeklyWinners.html" data-swup-animation="gradient">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+          </label>
+        </a>      
+     </div>
+
+    </div>
+  
+ <br><br><br>
+ <div class="transition-fade-left">
+  <div class="Whole">
+    <div class="top">
+
+    
+    <section id="header">
+        
+            <h1 class="display-5 fw-bold text-body-emphasis" style="text-align: center;">STREAK WIZARDS OF THE WEEK</h1>
+      <p style="text-align: center;">Congratulations, Wizards on leveling up yourselves to the top of table,<br><abbr title=" school of coding magicians" style="text-decoration: none;">Hogwarts</abbr>,Welcomes You to this House of Streak Wizards</p>
+      <br>
+      <p style="text-align: center; font-style: italic;">
+        <abbr style="text-decoration: none;">
+          <q cite="https://en.wikipedia.org/wiki/Eren_Yeager" >
+            It is our choices that show what we truly are, far more than our abilities
+          </q>_<b>Albus Dumbledore</b>
+          
+        </abbr>
+        
+      </p>
+      
+    </section>
+ 
+    <section id="Features">
+      <div class="containers">
+        <div class="fourth_place" style="display: none;">
+          <h3>WIZARD IV</h3>
+          <a href="https://shorturl.at/wDV23" target="_blank">
+            <img src="Images/4_100days.png" alt="1st" style="width: 200px; height: 200px;border-radius: 50%;">
+          </a>
+          
+          <p>Vaishnavi Natarajan</p>
+          <br>
+          
+          <div class="Invisible">
+            <div class="maincontainer">    
+              <div class="thecard">    
+            <div class="thefront" style=" display: flex; justify-content: center; align-items: center; background-color: grey;">
+              <img src="Images/streak.gif" alt="" style="width: 100%; height: 100%; border-radius: 20px;">
+            </div>
+            <div class="theback">
+  
+              <table style="width: 100%; max-height: 100%;border-radius: 20px;">
+                <tr>
+                  <th style="border-radius: 18px 18px 0 0;" colspan="2"><p style="font-size: 0.5rem; text-align: center; margin: 0%;">Rank</p> <p style="font-size: 1.5rem; text-align: center; margin: 0%;">4</p></th> 
+                </tr>
+                <tr>
+                  <th >🧙 SW</th> <td> 1</td>
+                </tr>
+                <tr>
+                  <th>🧙 max</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 5</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 4</th> <td> 0</td>
+                </tr>
+    
+    
+  
+                <tr >
+                  <th style="border-radius: 0 0 0 20px;">🎖️</th> <td style="border-radius: 0 0 20px 0;">50pts</td>
+                </tr>                         
+              </table>
+            </div>
+              </div>
+        </div>
+            
+          </div>
+        </div>
+
+        <div class="second_place">
+          <h3>🥈 II WIZARD 🥈</h3>
+          <a href="https://www.linkedin.com/in/kaviya-c-345a9123a" target="_blank">
+            <img src="Images/men.jpg" alt="1st" style="width: 200px; height: 200px;border-radius: 50%;">
+          </a>
+          
+          <p>Kaviya C</p>
+          <br>
+          
+          <div class="Invisible">
+            <div class="maincontainer">    
+              <div class="thecard">    
+            <div class="thefront" style=" display: flex; justify-content: center; align-items: center;background-image: linear-gradient(silver, black);  ">
+              <img src="Images/streak.gif" alt="" style="width: 100%; height: 100%; border-radius: 20px;">
+            </div>
+            <div class="theback">
+  
+              <table style="width: 100%; max-height: 100%;border-radius: 20px;">
+                <tr>
+                  <th style="border-radius: 18px 18px 0 0;" colspan="2"><p style="font-size: 0.5rem; text-align: center; margin: 0%;">Rank</p> <p style="font-size: 1.5rem; text-align: center; margin: 0%;">2</p></th> 
+                </tr>
+                <tr>
+                  <th >🧙 SW</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 max</th> <td> 1</td>
+                </tr>
+                <tr>
+                  <th>🧙 5</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 4</th> <td> 0</td>
+                </tr>
+    
+    
+  
+                <tr >
+                  <th style="border-radius: 0 0 0 20px;">🎖️</th> <td style="border-radius: 0 0 20px 0;">90pts</td>
+                </tr>                         
+              </table>
+            </div>
+              </div>
+        </div>
+            
+          </div>
+        </div>
+
+        <div class="first_place">
+          
+            <h3>🥇 FIRST PLACE 🥇</h3>   
+            <a href="https://www.linkedin.com/in/aadhithya-v-k-467152233" target="_blank">
+              <img src="Images/S1.jpeg" alt="1st" style="width: 200px; height: 200px;border-radius: 50%;"> 
+            </a>
+                        
+            <p>Aadhithya V.K</p>
+            <br>
+          
+      <div class="Invisible">
+        <div class="maincontainer">    
+          <div class="thecard">    
+        <div class="thefront" style=" display: flex; justify-content: center; align-items: center;background-image: linear-gradient(#d3af37, yellow);  ">
+          <img src="Images/streakWizard.gif" alt="" style="width: 100%; height: 100%; border-radius: 20px;">
+        </div>
+        <div class="theback" >
+          <table style="width: 100%; max-height: 100%;border-radius: 20px;">
+            <tr>
+              <th style="border-radius: 18px 18px 0 0;" colspan="2"><p style="font-size: 0.5rem; text-align: center; margin: 0%;">👑Rank👑</p> <p style="font-size: 1.5rem; text-align: center; margin: 0%;">1</p></th> 
+            </tr>
+            <tr>
+                  <th >🧙 SW</th> <td> 1</td>
+                </tr>
+                <tr>
+                  <th>🧙 max</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 5</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 4</th> <td> 0</td>
+                </tr>
+    
+    
+  
+                <tr style="text-align: center; padding: 50%;">
+                  <th style="border-radius: 0 0 0 20px;text-align: center;" >🎖️</th> <td style="border-radius: 0 0 20px 0; "><p style="font-size: 10px;">100pts</p></td>
+            </tr>                         
+          </table>
+        </div>
+          </div>
+    </div>
+            
+      </div>
+          
+	  </div>
+          
+        
+
+        <div class="third_place">
+          <h3>🥉 III WIZARD 🥉</h3>
+          <a href="https://shorturl.at/csJSU" target="_blank">
+            <img src="Images/3_100days.jpeg" alt="1st" style="width: 200px; height: 200px;border-radius:50%"></a>
+            <p>Monish Raju</p>
+          <br>
+          
+          <div class="Invisible">
+            <div class="maincontainer">    
+              <div class="thecard">    
+            <div class="thefront" style=" display: flex; justify-content: center; align-items: center;background-image: linear-gradient(#CD7F32, black);  ">
+              <img src="Images/streak.gif" alt="" style="width: 100%; height: 100%; border-radius: 20px;">
+            </div>
+            <div class="theback">
+              <table style="width: 100%; max-height: 100%;border-radius: 20px;">
+                <tr>
+                  <th style="border-radius: 18px 18px 0 0;" colspan="2"><p style="font-size: 0.5rem; text-align: center; margin: 0%;">Rank</p> <p style="font-size: 1.5rem; text-align: center; margin: 0%;">3</p></th> 
+                </tr>
+                <tr>
+                  <th >🧙 SW</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 max</th> <td> 1</td>
+                </tr>
+                <tr>
+                  <th>🧙 5</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 4</th> <td> 0</td>
+                </tr>
+    
+    
+  
+                <tr >
+                  <th style="border-radius: 0 0 0 20px;">🎖️</th> <td style="border-radius: 0 0 20px 0;">70</td>
+                </tr>                         
+              </table>      
+            
+            
+            </div>
+              </div>
+        </div>
+          </div>
+        </div>
+
+        <div class="fifth_place" style="display: none;">
+          <h3>V WINNER</h3>
+         <a href="http://www.linkedin.com/in/tamil-selvan-s-003s" target="_blank">
+           <img src="Images/5_100days.png" alt="1st" style="width: 200px; height: 200px;border-radius: 50%;"></a>
+          <p>Tamil</p>  
+          <br>
+          
+          <div class="Invisible">
+            <div class="maincontainer">    
+              <div class="thecard">    
+            <div class="thefront" style=" display: flex; justify-content: center; align-items: center;background-color: grey; ">
+              <img src="Images/streak.gif" alt="" style="width: 100%; height: 100%; border-radius: 20px;">
+            </div>
+            <div class="theback">
+              <table style="width: 100%; max-height: 100%;border-radius: 20px;">
+                <tr>
+                  <th style="border-radius: 18px 18px 0 0;" colspan="2"><p style="font-size: 0.5rem; text-align: center; margin: 0%;">Rank</p> <p style="font-size: 1.5rem; text-align: center; margin: 0%;">5</p></th> 
+                </tr>
+                <tr>
+                  <th >🧙 SW</th> <td> 1</td>
+                </tr>
+                <tr>
+                  <th>🧙 max</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 5</th> <td> 0</td>
+                </tr>
+                <tr>
+                  <th>🧙 4</th> <td> 0</td>
+                </tr>
+    
+    
+  
+                <tr >
+                  <th style="border-radius: 0 0 0 20px;">🎖️</th> <td style="border-radius: 0 0 20px 0;">50pts</td>
+                </tr>                         
+              </table>
+            </div>
+              </div>
+        </div>
+            
+          </div>       
+        </div>
+        
+      </div> 
+      
+            
+       
+    </section>
+  </div>
+    
+    
+  <div class="foots">
+    <section id="footer">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">Code Club</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <p>About me </p><a class="text-body-secondary" href="https://www.linkedin.com/in/jatin-kishore-m-315846238">
+                <img src="./SVG/linkedin.svg" alt="linkedin" height="30"></a>
+            </li>
+
+          </ul>
+        </footer>
+      </div>
+
+    </section>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </div>
+</div>
+</main>
+</body>
+<script src="https://unpkg.com/swup@4"></script>
+<script>
+  const swup = new Swup();
+</script>
+</html>
